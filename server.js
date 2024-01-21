@@ -81,5 +81,8 @@ app.listen(3000, () => {
   console.log("Example app listening on port 3000!");
 });
 
+// api key 
 // f1bdbd49f4dbba001614a4c4389c227b-us21
+
+// list id
 // 4dd4ea2b60
