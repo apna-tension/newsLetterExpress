@@ -77,8 +77,16 @@ app.post('/failure', (req, res) => {
     res.redirect('/');
 });
 
-app.listen(3000, () => {
-  console.log("Example app listening on port 3000!");
+
+// This is used for only on local server and if you want to deploy it on live server then you have to use process.env.PORT
+// app.listen(3000, () => {
+//   console.log("Example app listening on port 3000!");
+// });
+
+
+// This is used for live server as well as local server
+app.listen(process.env.PORT || 3000, () => {
+  console.log("Example app listening on Heroku port and our localserver!");
 });
 
 // api key 
